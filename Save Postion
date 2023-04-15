@@ -1,0 +1,334 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local gen = Instance.new("TextButton")
+local copy = Instance.new("TextButton")
+local pos = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local Tel = Instance.new("TextLabel")
+local copy2 = Instance.new("TextButton")
+local Git = Instance.new("TextLabel")
+local copy3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame.Position = UDim2.new(0.24632068, 0, 0.255785644, 0)
+Frame.Size = UDim2.new(0, 593, 0, 406)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Frame_2.Size = UDim2.new(0, 212, 0, 406)
+
+UICorner.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel.Position = UDim2.new(0.0566037744, 0, 0.0147783253, 0)
+TextLabel.Size = UDim2.new(0, 72, 0, 69)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "R"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = TextLabel
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.396226406, 0, 0.0320197046, 0)
+TextLabel_2.Size = UDim2.new(0, 128, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Position Gui"
+TextLabel_2.TextColor3 = Color3.fromRGB(48, 255, 224)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.396226406, 0, 0.0886699557, 0)
+TextLabel_3.Size = UDim2.new(0, 128, 0, 23)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Made by RSpilterScripts"
+TextLabel_3.TextColor3 = Color3.fromRGB(167, 167, 167)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextButton.Parent = Frame_2
+TextButton.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.214285716, 0)
+TextButton.Size = UDim2.new(0, 212, 0, 32)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Main"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.TextXAlignment = Enum.TextXAlignment.Right
+
+ImageLabel.Parent = TextButton
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(0, 37, 0, 32)
+ImageLabel.Image = "rbxassetid://8950630609"
+
+UICorner_3.Parent = Frame
+
+gen.Name = "gen"
+gen.Parent = Frame
+gen.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+gen.BorderSizePixel = 0
+gen.Position = UDim2.new(0.384485662, 0, 0.798029542, 0)
+gen.Size = UDim2.new(0, 126, 0, 32)
+gen.Font = Enum.Font.SourceSans
+gen.Text = "Generate"
+gen.TextColor3 = Color3.fromRGB(255, 255, 255)
+gen.TextScaled = true
+gen.TextSize = 14.000
+gen.TextWrapped = true
+
+copy.Name = "copy"
+copy.Parent = Frame
+copy.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+copy.BorderSizePixel = 0
+copy.Position = UDim2.new(0.758853257, 0, 0.798029542, 0)
+copy.Size = UDim2.new(0, 126, 0, 32)
+copy.Font = Enum.Font.SourceSans
+copy.Text = "Copy"
+copy.TextColor3 = Color3.fromRGB(255, 255, 255)
+copy.TextScaled = true
+copy.TextSize = 14.000
+copy.TextWrapped = true
+
+pos.Name = "pos"
+pos.Parent = Frame
+pos.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+pos.BorderSizePixel = 0
+pos.Position = UDim2.new(0.384485662, 0, 0.623152733, 0)
+pos.Size = UDim2.new(0, 348, 0, 50)
+pos.Font = Enum.Font.SourceSans
+pos.Text = "Press Generate To Set Position"
+pos.TextColor3 = Color3.fromRGB(255, 255, 255)
+pos.TextScaled = true
+pos.TextSize = 14.000
+pos.TextWrapped = true
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+Frame_3.BackgroundTransparency = 0.100
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.596964598, 0, 0.798029542, 0)
+Frame_3.Size = UDim2.new(0, 96, 0, 32)
+
+Tel.Name = "Tel"
+Tel.Parent = Frame
+Tel.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+Tel.BorderSizePixel = 0
+Tel.Position = UDim2.new(0.396290034, 0, 0.0911330581, 0)
+Tel.Size = UDim2.new(0, 348, 0, 50)
+Tel.Font = Enum.Font.SourceSans
+Tel.Text = "game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(add position here)"
+Tel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tel.TextScaled = true
+Tel.TextSize = 14.000
+Tel.TextWrapped = true
+
+copy2.Name = "copy2"
+copy2.Parent = Frame
+copy2.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+copy2.BorderSizePixel = 0
+copy2.Position = UDim2.new(0.5716694, 0, 0.214285702, 0)
+copy2.Size = UDim2.new(0, 126, 0, 32)
+copy2.Font = Enum.Font.SourceSans
+copy2.Text = "Copy"
+copy2.TextColor3 = Color3.fromRGB(255, 255, 255)
+copy2.TextScaled = true
+copy2.TextSize = 14.000
+copy2.TextWrapped = true
+
+Git.Name = "Git"
+Git.Parent = Frame
+Git.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+Git.BorderSizePixel = 0
+Git.Position = UDim2.new(0.396290034, 0, 0.347290695, 0)
+Git.Size = UDim2.new(0, 348, 0, 50)
+Git.Font = Enum.Font.SourceSans
+Git.Text = "https://github.com/CJFabro8"
+Git.TextColor3 = Color3.fromRGB(255, 255, 255)
+Git.TextScaled = true
+Git.TextSize = 14.000
+Git.TextWrapped = true
+
+copy3.Name = "copy3"
+copy3.Parent = Frame
+copy3.BackgroundColor3 = Color3.fromRGB(124, 214, 255)
+copy3.BorderSizePixel = 0
+copy3.Position = UDim2.new(0.5716694, 0, 0.470443338, 0)
+copy3.Size = UDim2.new(0, 126, 0, 32)
+copy3.Font = Enum.Font.SourceSans
+copy3.Text = "Copy"
+copy3.TextColor3 = Color3.fromRGB(255, 255, 255)
+copy3.TextScaled = true
+copy3.TextSize = 14.000
+copy3.TextWrapped = true
+
+-- Scripts:
+
+local function MOFMQX_fake_script() -- TextLabel_2.Rainbower 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(MOFMQX_fake_script)()
+local function SBDUPOA_fake_script() -- gen.LocalScript 
+	local script = Instance.new('LocalScript', gen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.pos.Text = tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+	end)
+end
+coroutine.wrap(SBDUPOA_fake_script)()
+local function LYNHCK_fake_script() -- copy.LocalScript 
+	local script = Instance.new('LocalScript', copy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.pos.Text)
+	end)
+end
+coroutine.wrap(LYNHCK_fake_script)()
+local function AGOW_fake_script() -- Frame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(AGOW_fake_script)()
+local function RBDWKC_fake_script() -- copy2.LocalScript 
+	local script = Instance.new('LocalScript', copy2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.Tel.Text)
+	end)
+end
+coroutine.wrap(RBDWKC_fake_script)()
+local function HGCZ_fake_script() -- copy3.LocalScript 
+	local script = Instance.new('LocalScript', copy3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.Git.Text)
+	end)
+end
+coroutine.wrap(HGCZ_fake_script)()
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{ --Getting "StarterGui" and calling the function
+Text = "[Notification]: Position Gui Loaded ";
+Color = Color3.new(161,161,161);
+FontSize = Enum.FontSize.Size24;
+})
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{ --Getting "StarterGui" and calling the function
+Text = "[Notification]: Make Sure to ReExecute Again when you die! ";
+Color = Color3.new(161,161,161);
+FontSize = Enum.FontSize.Size24;
+})
