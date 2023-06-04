@@ -1,0 +1,152 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderSizePixel = 4
+Frame.ClipsDescendants = true
+Frame.Position = UDim2.new(0.595696509, 0, 0.568106353, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 316, 0, 217)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BorderSizePixel = 3
+Frame_2.Size = UDim2.new(0, 316, 0, 20)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.Size = UDim2.new(0, 316, 0, 20)
+TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Text = "Spectral GUI"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 14
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.0791139305, 0, 0.142857149, 0)
+TextButton.Size = UDim2.new(0, 120, 0, 40)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "No Clip Activation"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 14
+
+TextButton!.MouseButton1Down:connect(function()
+local noclip = true char = game.Players.LocalPlayer.Character while true do if noclip == true then for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then v.CanCollide = false elseif v.ClassName == "Model" then v.Head.CanCollide = false end end) end end game:service("RunService").Stepped:wait() end
+end)﻿
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_2.BorderSizePixel = 3
+TextButton_2.Position = UDim2.new(0.0791139603, 0, 0.405529976, 0)
+TextButton_2.Size = UDim2.new(0, 120, 0, 40)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Building Tools"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextSize = 14
+
+TextButton_2!.MouseButton1Down:connect(function()
+local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool1.BinType = "Clone"
+tool2.BinType = "GameTool"
+tool3.BinType = "Hammer"
+tool4.BinType = "Script"
+tool5.BinType = "Grab"
+end)﻿
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_3.BorderSizePixel = 3
+TextButton_3.Position = UDim2.new(0.544303834, 0, 0.142857164, 0)
+TextButton_3.Size = UDim2.new(0, 120, 0, 40)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Forcefield Activation"
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextSize = 14
+
+TextButton_3!.MouseButton1Down:connect(function()
+Instance.new("ForceField", game.Players.LocalPlayer.Character)
+end)﻿
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_4.BorderSizePixel = 3
+TextButton_4.Position = UDim2.new(0.544303834, 0, 0.405529976, 0)
+TextButton_4.Size = UDim2.new(0, 120, 0, 40)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "BTools Hammer"
+TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+TextButton_4.TextSize = 14
+
+TextButton_4!.MouseButton1Down:connect(function()
+local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool3.BinType = "Hammer"
+end)﻿
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_5.BorderSizePixel = 3
+TextButton_5.Position = UDim2.new(0.544303834, 0, 0.672811091, 0)
+TextButton_5.Size = UDim2.new(0, 120, 0, 40)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Chat Troll Activation"
+TextButton_5.TextColor3 = Color3.new(0, 0, 0)
+TextButton_5.TextSize = 14
+
+TextButton_5!.MouseButton1Down:connect(function()
+local Action = game.Players:GetPlayers()
+ for i = 1,#Action do
+Action[i].Chatted:connect(function(Message)
+ game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("".."["..Action[i].Name.."]".." "..Message, "All")
+ end)
+end
+end)﻿
+
+TextButton_6.Parent = Frame
+TextButton_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_6.BorderSizePixel = 3
+TextButton_6.Position = UDim2.new(0.0791139603, 0, 0.672811091, 0)
+TextButton_6.Size = UDim2.new(0, 120, 0, 40)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Kill Roblox.exe"
+TextButton_6.TextColor3 = Color3.new(0, 0, 0)
+TextButton_6.TextSize = 14
+
+TextButton_6!.MouseButton1Down:connect(function()
+c = Instance.new("Hint")  --SHUT IT DOWN NO NAMES NEEDED just run it
+c.Text = "SEVER SHUTDOWN."
+c.Parent = game.Workspace
+text = {"SEVER SHUTDOWN, PREPARE.   CRASHING.   Crashing in, 3, 2, 1", "", "", ""}
+while wait(5) do
+if not game.Players:FindFirstChild("NAME") then
+local m = Instance.new("Message") m.Parent = Workspace
+for i,v in pairs(text) do
+m.Text = v
+wait(4)
+m:Remove()
+end
+for i,v in pairs(game.Players:GetChildren()) do
+v:Remove()
+end
+end
+end
+end)﻿
